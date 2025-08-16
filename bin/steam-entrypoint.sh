@@ -89,7 +89,7 @@ if [[ ! -d ${ARK_SERVER_VOLUME}/server ]] || [[ ! -f ${ARK_SERVER_VOLUME}/server
   touch "${ARK_SERVER_VOLUME}/server/ShooterGame/Binaries/Linux/ShooterGameServer"
   chmod +x "${ARK_SERVER_VOLUME}/server/ShooterGame/Binaries/Linux/ShooterGameServer"
 
-  ${ARKMANAGER} install --verbose
+  ${ARKMANAGER} install --beta=${BRANCH} --verbose
 fi
 
 crontab "${ARK_SERVER_VOLUME}/crontab"

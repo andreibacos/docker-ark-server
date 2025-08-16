@@ -2,7 +2,7 @@ FROM        cm2network/steamcmd:root
 
 LABEL       MAINTAINER="https://github.com/Hermsi1337/"
 
-ARG         ARK_TOOLS_VERSION="1.6.65"
+ARG         ARK_TOOLS_VERSION="1.6.67"
 ARG         IMAGE_VERSION="dev"
 
 ENV         IMAGE_VERSION="${IMAGE_VERSION}" \
@@ -25,7 +25,8 @@ ENV         IMAGE_VERSION="${IMAGE_VERSION}" \
             SERVER_LIST_PORT="27015" \
             STEAM_HOME="/home/${USER}" \
             STEAM_USER="${USER}" \
-            STEAM_LOGIN="anonymous"
+            STEAM_LOGIN="anonymous" \
+            BRANCH="public"
 
 ENV         ARK_TOOLS_DIR="${ARK_SERVER_VOLUME}/arkmanager"
 
